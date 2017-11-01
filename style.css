@@ -1,0 +1,240 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 80px;
+}
+.exterior{
+
+}
+
+.interior{
+    width: 1170px;
+    margin: 0 auto;
+}
+.empty_space {
+    min-height: 60px;
+}
+
+.header {
+    border:1px solid #ccc;
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    width: 100%;
+    height: 82px;
+
+}
+
+.header .meniu {
+    display: block;
+    width: 800px;
+    float:right;
+
+    display: flex;
+    justify-content: flex-end;
+}
+.header .meniu li {
+    display:inline-block;
+}
+
+.header .meniu li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    display: block;
+
+
+    padding: 35px 20px 32px 20px;
+    position:relative;
+    overflow: hidden;
+
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.header .meniu li a:hover {
+    color: #ee0000;
+    border-bottom:2px solid #ee0000;
+    background-color: #f1f1f1;
+}
+
+.header .meniu li .active {
+    color: #ee0000;
+    border-bottom:2px solid #ee0000;
+    background-color: #f1f1f1
+}
+
+.header .meniu li  .active:after {
+    content:'';
+    display:block;
+    width: 5px;
+    height: 5px;
+    background-color: #ee0000;
+
+    transform: rotate(45deg);
+    position: absolute;
+    bottom:-2px;
+    left: 50%;
+    margin-left:-2px;
+
+}
+.slider {
+    min-height: 400px;
+    background-color: #ccc;
+
+    background-image: url("grau.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grid{
+
+}
+.grid .interior {
+    display: flex;
+    justify-content: space-between;
+}
+.grid .box {
+    width: 33%;
+    padding-right: 40px;
+}
+
+.grid .box: last-child {
+    padding-right: 0px;
+}
+.grid .box h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+.grid .box p {
+    margin-bottom: 20px;
+}
+.grid .box a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+.grid .box a:hover {
+    color: #ee0000;
+}
+.grid .box a:hover .fa {
+    margin-left: 5px;
+}
+.grid .box h3 span {
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    display: block;
+    float:left;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.grid .box:hover h3 span {
+    background-color: #ee0000;
+    transform: rotate(45deg);
+}
+
+.top{
+    font-weight: 600;
+    font-size: 20px;
+
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+
+    position: relative;
+}
+.top:after{
+    content: '';
+    display: block;
+    width: 50px;
+    height:  3px;
+    background-color: #ee0000;
+
+    position: absolute;
+    bottom: 0px;
+}
+
+.poze_jos{
+    width: 25%;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+
+}
+
+.poze_jos h3 {
+    font-weight: 600;
+    font-size: 20px;
+
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+
+    position: relative;
+}
+
+.poze_jos h3 p {
+    font-weight: 700;
+    display: inline-table;
+}
+.poze_jos img:hover{
+    transform: rotate(25deg);
+}
+.half {
+    width: 50%;
+    padding-right: 25px;
+    display: flex;
+    }
+
+.half p {
+    padding: 20px 0 23px 0;
+    background: #fff;
+border: 1px solid #f2f2f2;
+text-align: center;
+margin-bottom: 20px;
+
+}
+
+.twobox {
+    width: 50%;
+    padding-right: 25px;
+    display: flex;
+}
+.flex{
+    display: flex;
+}
+.bottom img{
+    padding-right: 25px;
+}
+.bottom h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.bottomtwo {
+    display: flex;
+    padding-left:173px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #434343;
+    height:  200px;
+
+
+}
+.bottomtwo .low h3:hover {
+    color: #ee0000;
+    border-bottom:2px solid #ee0000;
+    background-color: #f1f1f1;
+}
+.footer {
+    height: 70px;
+    width: 100%;
+    background-color: #242424;
+}
